@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.avto_inventarizatsiya1"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "7.3"
+//        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.example.DY_PDT'
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'net.sf.jt400:jt400:9.5:jt400_jdk8'
+    implementation files('libs/jxl-2.6.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'me.dm7.barcodescanner:core:1.9'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+
+//    implementation (project(path: ':scanner')) {
+//        exclude module: 'support-v4'
+//        exclude module: 'support-v7'
+//    }
+
+}

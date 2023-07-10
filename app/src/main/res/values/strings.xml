@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LINE STOP</string>
+    <string name="scan_barcode">SUP inventarizatsiya</string>
+    <string name="view_information">Ma\'lumot ko\'rish</string>
+    <string name="scan_avtomobil">Avtomobil inventarizatsiya</string>
+    <string name="scan_exit">Chiqish</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

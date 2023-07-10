@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.example.avto_inventarizatsiya1",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "INSTANT_APP_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 1,
+        "versionName": "1.0",
+        "outputFile": "DY_PDT-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.example.avto_inventarizatsiya1",
+        "split": "",
+        "minSdkVersion": "21"
+      }
+    }
+  ]
+}

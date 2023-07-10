@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+//apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.bobekos'
+
+android {
+    compileSdkVersion 32
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 32
+        versionCode 23
+        versionName "1.0.23"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
+    implementation 'androidx.media:media:1.1.0-alpha04'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    testImplementation 'junit:junit:4.12'
+ //   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    api 'com.google.android.gms:play-services-gcm:16.1.0'
+    api 'com.google.android.gms:play-services-vision:17.0.2'
+
+    api "io.reactivex.rxjava2:rxandroid:2.1.1"
+    api "io.reactivex.rxjava2:rxjava:2.2.7"
+}
+repositories {
+    mavenCentral()
+}
