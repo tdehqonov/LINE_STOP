@@ -73,8 +73,15 @@ public  class Constants {
 //    public static String URLSEND_LINE_STOP="http://10.142.47.98:8081/api/activ";
 //    public static String URLSEND_LINE_STOP_LOGIN="http://10.142.47.98:8081/api/login";
     public static String URLSEND_LINE_STOP="http://10.142.47.98:8081/api/activ";
-    public static String URLSEND_LINE_STOP_LOGIN="http://10.142.47.98:8081/api/login";
-    public static String  URLSEND_LINE_STOPDATA="http://10.142.47.98:8081/api/activ/data1_2";
+
+
+    public static String URLSEND_LINE_STOP_LOGIN="http://10.142.62.226:8081/api/login";
+    public static String  URLSEND_LINE_STOPDATA="http://10.142.62.226:8081/api/activ/data1_2";
+
+
+//    public static String URLSEND_LINE_STOP_LOGIN="http://10.142.47.98:8081/api/login";
+//    public static String  URLSEND_LINE_STOPDATA="http://10.142.47.98:8081/api/activ/data1_2";
+
 
 
     final static String HAMMASI="HAMMASI";

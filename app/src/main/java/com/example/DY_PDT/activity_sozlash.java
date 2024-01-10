@@ -60,7 +60,7 @@ public class activity_sozlash extends AppCompatActivity {
         IDspNechiKunlik=findViewById(R.id.IDspNechiKunlik);
 
         muddatArray = new Integer[]{0,5, 10, 15, 20, 25, 30, 60, 120, 180, 240,300};
-        NechKunlikArray = new Integer[]{1,2, 3, 4, 5, 6, 7, 8, 9, 10};
+        NechKunlikArray = new Integer[]{1,2, 3, 4, 5, 6, 7, 8, 9, 10,20};
 
         ArrayAdapter<Integer> MuddatAdapter = new ArrayAdapter<Integer>(this,  android.R.layout.simple_expandable_list_item_1, muddatArray );
         IDspMuddat1.setAdapter(MuddatAdapter);
